@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">抢红包</string>
+    <string name="MM_name">抢微信红包</string>
+    <string name="QQ_name">抢QQ红包</string>
+    <string name="accessibility_description">保持屏幕长亮，并且不屏蔽群消息的前期下，后台运行抢红包，仅支持Android4.0以上的系统</string>
+</resources>
