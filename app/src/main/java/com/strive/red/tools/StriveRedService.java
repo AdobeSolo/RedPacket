@@ -99,14 +99,14 @@ public class StriveRedService extends AccessibilityService{
         }
     }
 
-    @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
+    @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR2)
     private void checkKey1() {
         AccessibilityNodeInfo nodeInfo = getRootInActiveWindow();
         if(nodeInfo == null) {
             Log.w(TAG, "rootWindow为空");
             return;
         }
-        List<AccessibilityNodeInfo> list = nodeInfo.findAccessibilityNodeInfosByText("拆红包");
+        List<AccessibilityNodeInfo> list = nodeInfo.findAccessibilityNodeInfosByViewId("com.tencent.mm:id/be_");
         for(AccessibilityNodeInfo n : list) {
             n.performAction(AccessibilityNodeInfo.ACTION_CLICK);
         }
