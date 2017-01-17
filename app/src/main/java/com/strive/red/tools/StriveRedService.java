@@ -82,6 +82,9 @@ public class StriveRedService extends AccessibilityService{
         }
     }
 
+
+
+
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
     private void openHongBao(AccessibilityEvent event) {
         if("com.tencent.mm.plugin.luckymoney.ui.LuckyMoneyReceiveUI".equals(event.getClassName())) {
